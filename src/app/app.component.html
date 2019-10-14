@@ -1,0 +1,9 @@
+<div style="text-align: left">
+<h1>Fetching Data from Employee Service</h1>
+</div>
+<button (click)="fetchEmployee()">Fetching Employee Data</button>
+
+<hr/>
+<ul>
+  <li *ngFor="let person of employee$ | async">{{ employee.name}}
+</ul>
